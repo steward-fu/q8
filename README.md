@@ -2,7 +2,7 @@
 ![Alt text](imgs/main.jpg)
   
 ## Introduction
-Q8 handheld is a very cheap device and the LCD screen sucks, just like shit. It is better for studying embedded system rather than play some games on this device. Now, I have ported Linux system (almost same as Miyoo) into this cheap device. If you are looking for Linux OS running on this device, here you can find all of resources you want. But the LCD model might be different with your Q8 device, so, I can't make sure whether it can run on your device or not. Anyway, follow the below steps to build a Linux system for your Q8 device. All of source code have been put on release page, enjoy !
+Q8 handheld is a very cheap device and the LCD screen sucks, just like shit. It is better for studying embedded system rather than play some games on this device. Now, I have ported Linux system (almost same as Miyoo) into this cheap device. If you are looking for Linux OS running on this device, here you can find all of resources you want. But the LCD model might be different with your Q8 device, so, I can't make sure whether it can run on your device or not. Anyway, follow the below steps to build a Linux system for your Q8 device, enjoy !  
   
 |Component|Description                                     |
 |---------|------------------------------------------------|
@@ -17,9 +17,9 @@ Q8 handheld is a very cheap device and the LCD screen sucks, just like shit. It 
 |Dimension|120mm x 80mm x 18mm                             |
 |Weight   |224g                                            |
   
-## How to build Linux OS for Miyoo(Bittboy)  
+## How to build Linux OS for Q8  
 ### prepare environment
--  Debian 9 (x64)
+-  Debian 10 (x64)
 -  download all of sources in release page
   
 ### configure toolchain
