@@ -42,8 +42,6 @@ Q8 handheld is a very cheap device and the LCD screen sucks, just like shit. It 
 ### build rootfs
 -  download buildroot-2018.02.9 from https://buildroot.org
 -  use config_buildroot-2018.02.9(in devel.zip) and then make it
--  toolchain location: /opt/miyoo
--  rootfs location: output/images/rootfs.tar
   
 ### prepare sdcard
 -  partition 1: 512MB FAT32 (boot.scr, suniv-f1c500s-miyoo.dtb, zImage, mininit, rootfs, dev, root)
