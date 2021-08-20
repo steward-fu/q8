@@ -28,10 +28,13 @@ Q8 handheld is a very cheap device and the LCD screen sucks, just like shit. It 
    -  $ export PATH=$PATH:/opt/miyoo/bin
   
 ### build uboot
--  $ ARCH=arm CROSS_COMPILE=arm-linux- make q8_sdcard_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make -j8
+-  $ ARCH=arm CROSS_COMPILE=arm-linux- make q8_sdcard_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make
   
 ### build kernel
 -  $ ARCH=arm CROSS_COMPILE=arm-linux- make q8_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make zImage modules dtbs
+  
+### build mininit
+-  $ ARCH=arm CROSS_COMPILE=arm-linux- make
   
 ### build boot.scr
 -  $ mkimage -C none -A arm -T script -d boot.cmd boot.scr
