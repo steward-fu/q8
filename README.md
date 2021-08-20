@@ -55,7 +55,7 @@ Q8 handheld is a very cheap device and the LCD screen sucks, just like shit. It 
 -  copy zImage into partition 1
 -  copy suniv-f1c500s-miyoo.dtb into partition 1
 -  copy mininit (original name: mininit-syspart) into partition 1
--  copy rootfs into partition 1
+-  copy rootfs (squashfs) into partition 1
 -  create empty folder "dev" into partition 1
 -  create empty folder "root" into partition 1
 -  copy GMenu2X and emulators into partition 2
