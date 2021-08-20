@@ -31,7 +31,7 @@ Q8 handheld is a very cheap device but the LCD screen sucks, just like shit. It 
 -  $ ARCH=arm CROSS_COMPILE=arm-linux- make q8_sdcard_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make
   
 ### build kernel
--  $ ARCH=arm CROSS_COMPILE=arm-linux- make q8_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make zImage modules dtbs
+-  $ ARCH=arm CROSS_COMPILE=arm-linux- make q8_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make all
   
 ### build mininit
 -  $ ARCH=arm CROSS_COMPILE=arm-linux- make
