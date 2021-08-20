@@ -25,34 +25,16 @@ Q8 handheld is a very cheap device and the LCD screen sucks, just like shit. It 
 ### configure toolchain
 -  extract toolchain.7z into /opt/miyoo
 -  export command
-   -  export PATH=$PATH:/opt/miyoo/bin
+   -  $ export PATH=$PATH:/opt/miyoo/bin
   
 ### build uboot
--  boot from sdcard
-   -  ARCH=arm CROSS_COMPILE=arm-linux- make q8_sdcard_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make -j8
+-  $ ARCH=arm CROSS_COMPILE=arm-linux- make q8_sdcard_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make -j8
   
 ### build kernel
--  ARCH=arm CROSS_COMPILE=arm-linux- make q8_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make zImage modules dtbs
+-  $ ARCH=arm CROSS_COMPILE=arm-linux- make q8_defconfig && ARCH=arm CROSS_COMPILE=arm-linux- make zImage modules dtbs
   
 ### build boot.scr
--  mkimage -C none -A arm -T script -d boot.cmd boot.scr
-  
-### prepare sdcard (>= 4GB)
--  partition 1: 32MB FAT32 (boot.scr, dtb and zImage)
--  partition 2: 256MB EXT4 (rootfs)
--  partition 3: 256MB SWAP
--  partition 4: FAT32 (GMenu2X, config files and emulators)
-  
-### flash uboot:
--  boot from SDCard
-   -  $ sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sdX bs=1024 seek=8
-  
-### flash kernel
--  copy boot.scr into partition 1
--  copy zImage into partition 1
--  copy suniv-f1c500s-miyoo.dtb into partition 1
--  copy r61520fb.ko into kernel folder in partition 2
--  copy daemon into kernel folder in partition 2
+-  $ mkimage -C none -A arm -T script -d boot.cmd boot.scr
   
 ### build rootfs
 -  download buildroot-2018.02.9 from https://buildroot.org
@@ -60,7 +42,20 @@ Q8 handheld is a very cheap device and the LCD screen sucks, just like shit. It 
 -  toolchain location: /opt/miyoo
 -  rootfs location: output/images/rootfs.tar
   
-### flash rootfs
--  extract rootfs.tar into Partition 2
+### prepare sdcard
+-  partition 1: 512MB FAT32 (boot.scr, suniv-f1c500s-miyoo.dtb, zImage, mininit, rootfs, dev, root)
+-  partition 2: FAT32 (GMenu2X and emulators)
+  
+### flash uboot:
+-  $ sudo dd if=u-boot-sunxi-with-spl.bin of=/dev/sdX bs=1024 seek=8
+  
+### copy files
+-  copy boot.scr into partition 1
+-  copy zImage into partition 1
+-  copy suniv-f1c500s-miyoo.dtb into partition 1
+-  copy mininit (original name: mininit-syspart) into partition 1
+-  create empty folder "dev" into partition 1
+-  create empty folder "root" into partition 1
+-  copy GMenu2X and emulators into partition 2
   
 ### https://steward-fu.github.io/website/index.htm
