@@ -11,8 +11,8 @@ Q8 handheld is a very cheap device but the LCD screen sucks, just like shit. It 
 |Storage  |8MB                                             |
 |Screen   |2.8" 320x240                                    |
 |Slot     |MicroSD                                         |
-|Gamepad  |DPad, 4 Buttons, Start, Select, VOL, L, R, Power|
-|USB      |Client                                          |
+|Gamepad  |DPad, 4 Buttons, Start, Select, L1 and R1       |
+|Port     |MicroUSB                                        |
 |Battery  |3.7V 1100mA                                     |
 |Dimension|120mm x 80mm x 18mm                             |
 |Weight   |224g                                            |
