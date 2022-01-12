@@ -2,7 +2,7 @@
 ![Alt text](imgs/main.jpg)
   
 ## Introduction
-Q8 handheld is a very cheap device but the LCD screen sucks, just like shit. It is better for studying embedded system rather than plays some games on this device. Basically, I don't know why I ported Linux system into this cheap device, ha ha. If you are looking for Linux OS running on this device, here you can find all of resources you want. But the LCD model might be different with your Q8 device, so, I can't make sure whether it can run on your device or not. Anyway, follow the below steps to build a Linux system for your Q8 device, enjoy !  
+Q8 handheld is a very cheap device but the LCD screen sucks, just like shit. It is better for studying embedded system rather than plays some games on this device. Basically, I don't know why I ported Linux system into this cheap device, ha ha. If you are looking for Linux OS running on this device, here you can find all of resources you want. But the LCD model might be different with your Q8 device, so, I can't make sure whether it can run on your device or not. Anyway, follow the steps below to build a Linux system for your Q8 device, enjoy !  
   
 |Component|Description                                     |
 |---------|------------------------------------------------|
